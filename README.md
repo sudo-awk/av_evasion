@@ -2,3 +2,11 @@
 
 need to be more diligent when writing notes
 
+##### Succesfully bypass defender using 
+>- hoaxshell
+>- unicorn
+
+##### Have to try when I have free time
+>- empire
+>- chimera
+>- sliver
